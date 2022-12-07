@@ -4979,6 +4979,32 @@
     #define LED1_PIN_INVERSE    1
     #define LED2_PIN            13  // red LED
     #define LED2_PIN_INVERSE    1
+// -----------------------------------------------------------------------------
+// BN-LINK BNC-60/U130T Outdoor Smart Plug
+// https://www.amazon.com/BN-LINK-Countdown-Function-Compatible-Assistant/dp/B07JQSX11M
+// Note there is a non-ESP version with the same FCC ID
+// -----------------------------------------------------------------------------
+
+#elif defined(BN_LINK_BNC_60_U130T)
+
+    // Info
+    #define MANUFACTURER        "BN-LINK"
+    #define DEVICE              "BNC-60/U130T"
+
+    // Buttons
+    #define BUTTON1_PIN         13
+    #define BUTTON1_CONFIG      BUTTON_PUSHBUTTON | BUTTON_DEFAULT_HIGH
+    #define BUTTON1_RELAY       1
+
+    // Relays
+    #define RELAY1_PIN          12
+    #define RELAY1_TYPE         RELAY_TYPE_NORMAL
+
+    // LEDs
+    #define LED1_PIN            4 // red
+    #define LED1_PIN_INVERSE    1
+    #define LED2_PIN            5 // blue
+    #define LED2_PIN_INVERSE    1
 
 // -----------------------------------------------------------------------------
 // Arlec Smart PB89HA Power Strip
